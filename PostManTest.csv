@@ -1,0 +1,12 @@
+﻿Id,UserName,FirstName,LastName,Email,Password,Phone,UserStatus
+100,Amit1,Amit,Ghosh1,Amit@test.com,123456,1234567890,1
+101,Amit2,Sumit,Ghosh2,Sumit@test.com,12345,987654321,2
+102,Amit3,Samir,Ghosh3,Samir@test.com,123457,740740752,3
+103,Amit4,Subhra,Ghosh4,Subhra@test.com,12345678,493827183,4
+104,Amit5,Saptadipa,Ghosh5,Saptadipa@test.com,1234568,246913614,5
+105,Amit6,Bhupen,Ghosh6,Bhupen@test.com,1234569,123408764,6
+106,Amit7,Major,Ghosh7,Major@test.com,1234570,235135642,7
+107,Amit8,Mohan,Ghosh8,Mohan@test.com,1234571,214135647,8
+108,Amit9,Sampurna,Ghosh9,Sampurna@test.com,1234572,134357246,9
+109,Amit10,Swagatam,Ghosh10,Swagatam@test.com,1234573,334135247,0
+110,Amit11,Sunil,Ghosh11,Sunil@test.com,1234574,134573,9
