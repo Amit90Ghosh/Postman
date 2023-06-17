@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "6a071ca6-865d-4352-8ab4-24ce5e3fd3d6",
+		"name": "PetStore_User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23279400"
+	},
+	"item": [
+		{
+			"name": "User Create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\",  ()=> {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"pm.test(\"Test Message\", ()=>{\r",
+							"    pm.expect(jsonData.message).to.eql.toString((pm.variables.get(\"Id\")));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"{{Id}}\",\n  \"username\": \"{{UserName}}\",\n  \"firstName\": \"{{FirstName}}\",\n  \"lastName\": \"{{LastName}}\",\n  \"email\": \"{{Email}}\",\n  \"password\": \"{{Password}}\",\n  \"phone\": \"{{Phone}}\",\n  \"userStatus\": \"{{UserStatus}}\"\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
